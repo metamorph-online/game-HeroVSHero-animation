@@ -1,0 +1,261 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Jura:600&subset=latin,cyrillic-ext);
+
+
+/*   preloader   */
+
+body {
+	overflow: hidden;
+}
+
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#000; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+	width:500px;
+	height:300px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background :url(../images/preloader.gif) center; /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-150px 0 0 -250px; /* is width and height divided by two */
+}
+
+/* video background */
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: #000;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body
+{
+	background-color: #000!important;
+	height: 100%;
+	overflow: hidden!important;
+}
+
+#preloader h3
+{
+	color: #fff!important;
+}
+
+.pos
+{
+	position: fixed;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+	padding: 0px;
+	margin: 0px;
+	color: #000;
+}
+
+h1
+{font-size: 46px;}
+
+h2
+{font-size: 37px;}
+
+h3
+{font-size: 32px;}
+
+
+.text1, .text3, .text5
+{
+
+	top: 30px;
+	left: 25%;
+	right: 25%;
+	padding: 20px;	
+	color: #fff;
+	text-align: center;
+    z-index: 2;
+}
+
+.text2, .text4, .text6
+{
+	top: 80px;
+	right: 20%;
+	left: 20%;
+	padding: 20px;
+	color: #fff;
+	text-align: center;	
+	z-index: 2;
+}
+
+.bg
+{
+	width: 100%!important;
+	height: 100%!important;
+	background: url(../images/back.jpg) no-repeat center;
+	z-index: -101;
+}
+
+.smoke
+{
+	width: 500px;
+	height: 2000px;
+	background:url(../images/smoke.png);
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: -2000px;
+	right: 20%;
+}
+
+.heroLeft
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 3;
+	width: 40%;
+}
+
+.heroLeft img
+{
+	width: 100%!important;
+}
+
+.heroRight img
+{
+	width: 100%!important;
+}
+
+.heroRight
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 4;
+	width: 40%;
+}
+
+.shield
+{
+  position: absolute;
+  top: 170px;
+  z-index: 1;
+  width: 100%!important;
+}
+
+
+/*! Paddings */
+
+.padd_t10
+{
+padding-top: 10px;
+}
+
+.padd_t20
+{
+padding-top: 20px;
+}
+
+.padd_r10
+{
+padding-right: 10px;
+}
+
+.padd_r20
+{
+padding-right: 20px;
+}
+
+.padd_l10
+{
+padding-left: 10px;
+}
+
+.padd_l20
+{
+padding-left: 20px;
+}
+
+.padd_b10
+{
+padding-bottom: 10px;
+}
+
+.padd_b20
+{
+padding-bottom: 20px;
+}
+
+
+/*! Margins */
+
+.marg_t10
+{
+margin-top: 10px;
+}
+
+.marg_t20
+{
+margin-top: 20px;
+}
+
+.marg_r10
+{
+margin-right: 10px;
+}
+
+.marg_r20
+{
+margin-right: 20px;
+}
+
+.marg_l10
+{
+margin-left: 10px;
+}
+
+.marg_l20
+{
+margin-left: 20px;
+}
+
+.marg_b10
+{
+margin-bottom: 10px;
+}
+
+.marg_b20
+{
+margin-bottom: 20px;
+}
